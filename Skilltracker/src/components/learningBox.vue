@@ -2,9 +2,9 @@
   <div id="container">
     <h1 id="learningText">Learning {{ learning }}</h1>
     <h2>My settings:</h2>
-    <p>Hours: <span class="userData">{{ hours }}</span></p>
-    <p>Theory: <span class="userData">{{ theory }}</span></p>
-    <p>Practice: <span class="userData">{{ practice }}</span></p>
+    <p>Time: <span class="userData">{{ hours }} hours</span></p>
+    <p>Theory: <span class="userData">{{ theory }}%</span></p>
+    <p>Practice: <span class="userData">{{ practice }}%</span></p>
   </div>
 </template>
 
@@ -74,6 +74,7 @@ export default {
     padding-right: 60px;
     padding-left: 60px;
     border-radius: 10px;
+    width: 30%;
 }
 
 p {
