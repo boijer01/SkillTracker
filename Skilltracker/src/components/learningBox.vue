@@ -74,7 +74,7 @@ export default {
     padding-right: 60px;
     padding-left: 60px;
     border-radius: 10px;
-    width: 30%;
+   
 }
 
 p {
