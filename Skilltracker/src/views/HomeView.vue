@@ -12,8 +12,14 @@ import learningBox from "../components/learningBox.vue";
       <div class="center-section">
         <div class="buttons-container">
           <Button label="Learn" />
-          <Button label="New" />
-          <Button label="Trophies" />
+
+          <router-link class="router-link" to="/AddLearningItem">
+            <Button label="New" />
+          </router-link>
+
+          <router-link class="router-link" to="/Trophies">
+            <Button label="Trophies" />
+          </router-link>
         </div>
       </div>
 
@@ -29,6 +35,9 @@ import learningBox from "../components/learningBox.vue";
 <style>
 body {
   background-color: #080c26;
+}
+
+.router-link {
 }
 
 .progressbar {
@@ -50,7 +59,7 @@ body {
   gap: 20px; /* adds 20px of space between buttons */
 }
 .buttons-container button {
-  width: 60%;
+  width: 250px;
   height: 60px;
   font-size: 2rem;
   transition: 300ms;
@@ -59,7 +68,7 @@ body {
 
 .buttons-container button:hover {
   border-radius: 20px;
-  width: 65%;
+  width: 270px;
 }
 
 .left-section,
